@@ -1,0 +1,23 @@
+@use './../const' as const;
+
+.body-container{
+	display: flex;
+	padding: 50px;
+}
+
+.eva{
+	position: absolute;
+	height: 100vh;
+	left: -180px;
+	top: -2px;
+}
+
+.tabs-title{
+	@include const.h1-font;
+	font-size: 5em;
+}
+
+.tabs-content{
+	@include const.text-font;
+	padding-left: 50px;
+}

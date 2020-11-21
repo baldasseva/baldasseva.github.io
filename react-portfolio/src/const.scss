@@ -1,0 +1,20 @@
+//Palette
+$main-color: #FFD89D !default;
+$secondary-color: #fcbd60 !default;
+$text-color: #000000 !default;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@mixin h1-font{
+    font-family: 'Cookie', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@mixin h2-font{
+    font-family: 'Raleway', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@mixin text-font{
+    font-family: 'Open Sans', sans-serif;
+}

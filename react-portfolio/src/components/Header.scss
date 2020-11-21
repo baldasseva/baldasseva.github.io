@@ -1,0 +1,30 @@
+@use './../const' as const;
+
+.header-container{
+	background: const.$main-color;
+    display: flex;
+	justify-content: flex-end;
+	height: 5vh;
+	min-height: 30px;
+}
+
+.tabs-header {
+	height: inherit;
+	min-height: inherit;
+	display: flex;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+	height: inherit;
+	min-height: inherit;
+	padding: 0 24px;
+	text-align: center;
+	cursor: pointer;
+    
+	&.active {
+		color: #000;
+		background: #fff;
+	}
+}
