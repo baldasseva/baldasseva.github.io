@@ -3,10 +3,9 @@ import Header from './components/Header';
 import Body from './components/Body';
 
 function App() {
-    const [selectedTab, setSelectedTab] = useState(1);
-    console.log("selected tab: " + selectedTab);
+    const [selectedTab, setSelectedTab] = useState(0);
     return (
-      <div>
+      <div style={{height:'100%'}}>
         <Header 
         selectedTab = { selectedTab } 
         setSelectedTab = { setSelectedTab } 

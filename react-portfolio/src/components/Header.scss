@@ -1,20 +1,27 @@
 @use './../const' as const;
 
+$height: 5vh;
+
 .header-container{
 	background: const.$main-color;
     display: flex;
-	justify-content: flex-end;
-	height: 5vh;
+	justify-content: space-between;
+	height: $height;
 	min-height: 30px;
 }
 
 .tabs-header {
 	height: inherit;
 	min-height: inherit;
+	min-width: 60%;
 	display: flex;
+	justify-content: stretch;
+	padding-left: calc(2/3*100vh - 150px);
 }
 
 .tabs {
+	@include const.h2-font;
+	font-weight: bold;
     display: flex;
     align-items: center;
 	height: inherit;
@@ -27,4 +34,23 @@
 		color: #000;
 		background: #fff;
 	}
+}
+
+.tab0{
+	@include const.h1-font;
+	flex-grow: 1;
+    align-items: unset;
+	font-size: calc(30px + 1vh);
+	font-weight: normal;
+	&.active{
+		background: const.$main-color;
+		//visibility: hidden;
+	}
+}
+
+@function min-font-height($variable-height){
+	@if $variable-height < 30px {
+		@return 30px;
+	}
+	@return $variable-height;
 }

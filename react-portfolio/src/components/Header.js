@@ -11,7 +11,7 @@ function Header(props) {
                     <div
                     key={index}
                     data-tab={tab.id}
-                    className={`tabs ${props.selectedTab === tab.id ? "active" : ""}`}
+                    className={`tabs ${"tab" + tab.id} ${props.selectedTab === tab.id ? "active" : ""}`}
                     onClick={e => props.setSelectedTab(tab.id)}
                     >
                     {tab.tabName}
