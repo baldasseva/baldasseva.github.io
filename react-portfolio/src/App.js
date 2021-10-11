@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
-import Header from './components/Header';
+import React from 'react';
 import Body from './components/Body';
+import './App.scss';
 
 function App() {
-    const [selectedTab, setSelectedTab] = useState(0);
     return (
       <div style={{height:'100%'}}>
-        <Header 
-        selectedTab = { selectedTab } 
-        setSelectedTab = { setSelectedTab } 
-        />
-        <Body 
-        selectedTab = { selectedTab } 
-        />
+        <Body/>
       </div>
     );
   }

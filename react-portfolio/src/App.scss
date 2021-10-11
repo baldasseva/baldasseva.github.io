@@ -1,0 +1,5 @@
+@use './const' as const;
+
+body{
+    background-color: const.$background-color;
+}

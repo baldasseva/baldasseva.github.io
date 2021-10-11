@@ -1,35 +1,28 @@
-import tabsData from '../assets/Contents';
-import eva from '../assets/eva.png';
+import React from 'react';
 import './Body.scss';
 
-import Home from './tabs/Home';
-import Games from './tabs/Games';
-import Design from './tabs/Design';
-import Coding from './tabs/Coding';
 
-function Body(props) {
+function Body(){
+    return(
+        <div className="body-container">
+            <div className="h1-title">Eva Baldasseroni</div>
+            <div className="h2-title">Frontend Engineer</div>
+            <div className="text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam ante. Nullam faucibus mi quis velit. Ut tempus purus at lorem. Nunc dapibus tortor vel mi dapibus sollicitudin. Maecenas lorem. Duis pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce consectetuer risus a nunc. Fusce wisi. Suspendisse sagittis ultrices augue. Nulla non lectus sed nisl molestie malesuada. Pellentesque ipsum. Quisque porta. Pellentesque sapien.
 
-    let content = <Home/>;
-    switch(props.selectedTab){
-        case 0: content = <Home/>; break;
-        case 1: content = <Coding/>; break;
-        case 2: content = <Design/>; break;
-        case 3: content = <Games/>; break;
-        default: content = <Home/>; break;
-    }
+                    Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Praesent in mauris eu tortor porttitor accumsan. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Mauris elementum mauris vitae tortor. Vestibulum fermentum tortor id mi. Suspendisse nisl. Donec vitae arcu. Integer in sapien. Integer malesuada. Praesent dapibus. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Suspendisse nisl. Integer lacinia. Vivamus luctus egestas leo. Praesent vitae arcu tempor neque lacinia pretium. Nullam sit amet magna in magna gravida vehicula. Nulla non lectus sed nisl molestie malesuada.
 
-    return (
-        <div>
-            <img className="eva" src={eva} alt="Eva"/> 
-            <div className="tabs-container">
-                <div className="tabs-title">{props.selectedTab !== 0? tabsData[props.selectedTab].tabName : null}</div>
-                <div className="tabs-content">
-                    {props.selectedTab !== 0? tabsData[props.selectedTab].tabContent : null}
-                    {content}
-                </div>
+                    Proin in tellus sit amet nibh dignissim sagittis. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Vivamus porttitor turpis ac leo. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Donec quis nibh at felis congue commodo. Etiam commodo dui eget wisi. Aliquam in lorem sit amet leo accumsan lacinia. Nunc tincidunt ante vitae massa. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Nullam faucibus mi quis velit. Morbi scelerisque luctus velit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+                    Integer lacinia. Mauris elementum mauris vitae tortor. Fusce consectetuer risus a nunc. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Aliquam erat volutpat. Sed ac dolor sit amet purus malesuada congue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Etiam posuere lacus quis dolor. Nulla est. Maecenas sollicitudin. Nulla non arcu lacinia neque faucibus fringilla. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Mauris dictum facilisis augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Duis condimentum augue id magna semper rutrum. In enim a arcu imperdiet malesuada. Vestibulum fermentum tortor id mi. Donec quis nibh at felis congue commodo.
+
+                    Nunc dapibus tortor vel mi dapibus sollicitudin. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Phasellus rhoncus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce consectetuer risus a nunc. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Mauris tincidunt sem sed arcu. Integer pellentesque quam vel velit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Nulla non arcu lacinia neque faucibus fringilla. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Aliquam ornare wisi eu metus. Aliquam erat volutpat. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Fusce tellus.
+
+                    Mauris tincidunt sem sed arcu. Etiam dictum tincidunt diam. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Curabitur bibendum justo non orci. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Aenean placerat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas libero. Nunc dapibus tortor vel mi dapibus sollicitudin. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Nullam dapibus fermentum ipsum. Maecenas lorem. Vivamus ac leo pretium faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla non arcu lacinia neque faucibus fringilla. Sed ac dolor sit amet purus malesuada congue.
+
+                    Pellentesque pretium lectus id turpis. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Vivamus luctus egestas leo. In dapibus augue non sapien. Proin mattis lacinia justo. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Fusce suscipit libero eget elit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Integer in sapien. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. In convallis. In rutrum. Suspendisse sagittis ultrices augue. Etiam posuere lacus quis dolor. Suspendisse nisl. 
             </div>
         </div>
-    );
-  }
-  
-  export default Body;
+    )
+}
+
+export default Body;

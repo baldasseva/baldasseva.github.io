@@ -1,23 +1,4 @@
-@use './../const' as const;
 
-.eva{
-	position: absolute;
-	height: 100vh;
-	left: -100px;
-	top: -2px;
-}
-
-.tabs-container{
-	padding: 40px;
-	padding-left: calc(2/3*100vh - 100px);
-}
-
-.tabs-title{
-	@include const.h1-font;
-	font-size: 5em;
-}
-
-.tabs-content{
-	@include const.text-font;
-	padding-left: 20px;
+.body-container{
+    padding: 20vh 20% 0px;
 }
