@@ -1,5 +1,45 @@
 @use './const' as const;
 
+@mixin h1-font{
+    font-family: 'Bungee', cursive, 'Arial', 'sans-serif';
+    font-size: 2.5rem;
+    // text-align: center;
+}
+@mixin h2-font{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    // text-align: center;
+}
+@mixin text-font{
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+@mixin tag-font{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+
 body{
+    @include text-font;
     background-color: const.$background-color;
+}
+
+h1{ @include h1-font }
+h2{ @include h2-font }
+.tag{ @include tag-font }
+
+.flex{
+    display: flex;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
 }

@@ -1,13 +1,14 @@
-import React from 'react';
-import './Body.scss';
+import React from 'react'
+import Game from './Game'
+import Header from './Header'
+import './Body.scss'
 
 
 function Body(){
     return(
         <div className="body-container">
-            <div className="h1-title">Eva Baldasseroni</div>
-            <div className="h2-title">Frontend Engineer</div>
-            <div className="text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam ante. Nullam faucibus mi quis velit. Ut tempus purus at lorem. Nunc dapibus tortor vel mi dapibus sollicitudin. Maecenas lorem. Duis pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce consectetuer risus a nunc. Fusce wisi. Suspendisse sagittis ultrices augue. Nulla non lectus sed nisl molestie malesuada. Pellentesque ipsum. Quisque porta. Pellentesque sapien.
+            <Game/>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam ante. Nullam faucibus mi quis velit. Ut tempus purus at lorem. Nunc dapibus tortor vel mi dapibus sollicitudin. Maecenas lorem. Duis pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce consectetuer risus a nunc. Fusce wisi. Suspendisse sagittis ultrices augue. Nulla non lectus sed nisl molestie malesuada. Pellentesque ipsum. Quisque porta. Pellentesque sapien.
 
                     Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Praesent in mauris eu tortor porttitor accumsan. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Mauris elementum mauris vitae tortor. Vestibulum fermentum tortor id mi. Suspendisse nisl. Donec vitae arcu. Integer in sapien. Integer malesuada. Praesent dapibus. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Suspendisse nisl. Integer lacinia. Vivamus luctus egestas leo. Praesent vitae arcu tempor neque lacinia pretium. Nullam sit amet magna in magna gravida vehicula. Nulla non lectus sed nisl molestie malesuada.
 
@@ -20,9 +21,10 @@ function Body(){
                     Mauris tincidunt sem sed arcu. Etiam dictum tincidunt diam. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Curabitur bibendum justo non orci. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Aenean placerat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas libero. Nunc dapibus tortor vel mi dapibus sollicitudin. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Nullam dapibus fermentum ipsum. Maecenas lorem. Vivamus ac leo pretium faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla non arcu lacinia neque faucibus fringilla. Sed ac dolor sit amet purus malesuada congue.
 
                     Pellentesque pretium lectus id turpis. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam neque. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Vivamus luctus egestas leo. In dapibus augue non sapien. Proin mattis lacinia justo. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Fusce suscipit libero eget elit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Integer in sapien. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. In convallis. In rutrum. Suspendisse sagittis ultrices augue. Etiam posuere lacus quis dolor. Suspendisse nisl. 
-            </div>
+            </p>
+            <Header/>
         </div>
     )
 }
 
-export default Body;
+export default Body

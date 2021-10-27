@@ -1,0 +1,38 @@
+@use '../const' as const;
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: const.$background-color;
+    padding: 2em;
+
+    h1{
+        padding: unset;
+        margin: unset;
+    }
+    h2{
+        padding: unset;
+        margin: unset;
+    }
+}
+
+#footer-flex{
+    justify-content: space-between;
+}
+
+#social-media-container{
+    min-width: 200px;
+}
+
+@mixin social-tag($color){
+    background-color: $color;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#twitter-tag{ @include social-tag(const.$twitter-color) }
+#instagram-tag{ @include social-tag(const.$instagram-color) }
+#linkedin-tag{ @include social-tag(const.$linkedin-color) }
